@@ -1,0 +1,87 @@
+% Documento do tipo artigo, com fonte tamanho 11
+\documentclass[11pt]{article}
+
+% Configura o tamanho do papel e das margens
+\usepackage[
+    a4paper,
+    top=20mm,
+    right=20mm,
+    bottom=10mm,
+    left=20mm
+]{geometry}
+
+% Suporte a caracteres acentuados
+\usepackage[utf8]{inputenc}
+
+% Configura o idioma para português do Brasil, incluindo suporte a hifenização
+\usepackage[brazil]{babel}
+
+% Melhora a renderização da fonte Computer Modern em PDFs modernos
+\usepackage{lmodern}
+
+% Melhora a codificação da fonte
+\usepackage[T1]{fontenc}
+
+% Permite a inclusão de imagens
+\usepackage{graphicx}
+
+% Permite cores por nome
+\usepackage{xcolor}
+
+% Configure o \includegraphics a não emitir a seguinte mensagem de warning:
+% PDF inclusion: multiple pdfs with page group included in a single page
+\pdfsuppresswarningpagegroup=1
+
+% Começo do documento
+\begin{document}
+
+\begin{center}
+UNIVERSIDADE FEDERAL DA PARAÍBA
+
+CENTRO DE CIÊNCIAS EXATAS E DA NATUREZA
+
+DEPARTAMENTO DE ESTATÍSTICA
+
+DISCIPLINA: INFERÊNCIA I
+\end{center}
+
+
+\textbf{Docente:} Dra Tatiene Correia de Souza \\
+\textbf{Discente:} Fabrício Barros Cabral - 20230052696\\
+
+\begin{center}
+{\Large \textbf{Análise do Teor de Café}}
+\end{center}
+
+\begin{enumerate}
+    \item Qual é a estimativa do teor médio de cafeína de cada fornecedor? Qual
+    a margem de erro e a amplitude associadas às estimativas em diferentes
+    níveis de confiança (90\%, 95\% e 99\%)? Interprete os resultados.
+
+    Marca A:
+
+    \item Considerando a diferença entre as médias de cafeína das marcas A e B,
+    qual é a estimativa dessa diferença? O intervalo sugere diferença
+    signicativa no teor médio de cafeína entre as marcas em cada um dos níveis
+    de confiança (90\%, 95\% e 99\%)?
+    \item Seu chefe está preocupado com a regularidade do produto. Qual é a
+    variabilidade do teor de cafeína de cada marca? Com base em intervalos de
+    confiança de 95\% para as variâncias, qual fornecedor mostra maior
+    consistência? Essa diferença pode impactar a percepção de qualidade pelo
+    consumidor?
+    \item Avaliando agora a relação entre as variabilidades, qual é a razão
+    entre as variâncias das marcas A e B? Em diferentes níveis de conança (90\%,
+    95\%, 99\%), o resultado sugere igualdade ou diferença na consistência entre
+    os fornecedores?
+    \item Pensando na pesquisa de opinião com consumidores, qual é a estimativa
+    da proporção de aprovação de cada marca? Qual a margem de erro em 90\%, 95\%
+    e 99\%? Qual marca se mostra mais aceita pelo público? Justique.
+    \item Considerando a diferença entre as proporções de aprovação (A - B),
+    qual é a estimativa dessa diferença? Em diferentes níveis de conança (90\%,
+    95\%, 99\%), o intervalo inclui ou não o valor zero? O que isso indica sobre
+    a aceitação das duas marcas no mercado?
+\end{enumerate}
+
+
+
+\end{document}
