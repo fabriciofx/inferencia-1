@@ -1,4 +1,12 @@
+.DS_Store
 .Rproj.user
 .Rhistory
 .RData
 .Ruserdata
+*.aux
+*.fdb_latexmk
+*.fls
+*.log
+*.synctex.gz
+*.pdf
+!**/plots/*.pdf
