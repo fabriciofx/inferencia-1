@@ -137,7 +137,7 @@ hist_A <- ggplot(df_A, aes(x = marca_A)) +
   ) +
   labs(
     title = "Marca A - Histograma",
-    x = "Teor de cafeína (mg)",
+    x = "Teor de cafeína (mg/xícara)",
     y = "Densidade"
   ) +
   theme_minimal()
@@ -156,7 +156,7 @@ hist_B <- ggplot(df_B, aes(x = marca_B)) +
   ) +
   labs(
     title = "Marca B - Histograma",
-    x = "Teor de cafeína (mg)",
+    x = "Teor de cafeína (mg/xícara)",
     y = "Densidade"
   ) +
   theme_minimal()
@@ -167,7 +167,11 @@ bplot_AB <- ggplot(dados, aes(x = modelo, y = cafeina_mg)) +
   geom_boxplot() +
   geom_jitter(width = 0.2, alpha = 0.6, color = "black") +
   stat_summary(fun = mean, geom = "point", shape = 23, size = 2, fill = "red") +
-  labs(title = "Teor de cafeína por marca", x = "Marca", y = "Teor de cafeína") +
+  labs(
+    title = "Teor de cafeína por marca",
+    x = "Marca",
+    y = "Teor de cafeína (mg/xícara)"
+  ) +
   theme_minimal()
 
 # 12. Exporta as figuras
