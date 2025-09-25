@@ -161,6 +161,7 @@ hist_B <- ggplot(df_B, aes(x = marca_B)) +
   ) +
   theme_minimal()
 hist_AB <- hist_A / hist_B
+print(hist_AB)
 
 # 11. Compara os boxplots das Marcas A e B
 bplot_AB <- ggplot(dados, aes(x = modelo, y = cafeina_mg)) +
@@ -173,6 +174,7 @@ bplot_AB <- ggplot(dados, aes(x = modelo, y = cafeina_mg)) +
     y = "Teor de cafeína (mg/xícara)"
   ) +
   theme_minimal()
+print(bplot_AB)
 
 # 12. Exporta as figuras
 if (!dir.exists("plots")) dir.create("plots")
